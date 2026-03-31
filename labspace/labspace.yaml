@@ -1,25 +1,19 @@
 metadata:
-  id: chbrown13/labspace-testing
+  id: software-testing-debugging
   sourceRepo: github.com/chbrown13/labspace-testing
-  contentVersion: abcd123 # Will be filled in during CI
+  contentVersion: 1.0.0
 
-title: Labspace starter
-description: |
-  A basic template for creating a Labspace, including all of the boilerplate needed to write and publish a Labspace.
+title: "Testing and Debugging"
+description: Practice debugging and testing Python programs and building an AI-powered pre-commit testing agent.
 
 sections:
   - title: Introduction
     contentPath: 01-introduction.md
-  - title: Main Content 1
-    contentPath: 02-main-content.md
-  - title: Conclusion
-    contentPath: 03-conclusion.md
-
-# Services are used to add default tabs in the Labspace interface.
-# The IDE will always be present as a service, but you can add additional services as needed.
-# Icon values come from https://fonts.google.com/icons/
-services:
-  - id: app
-    url: http://localhost:3000
-    title: App
-    icon: anchor
+  - title: "Task 1: Debugging with Unit Tests"
+    contentPath: 02-debugging.md
+  - title: "Task 2: Improving Test Coverage"
+    contentPath: 03-python-coverage.md
+  - title: "Task 3: AI-Generated Tests"
+    contentPath: 04-ai-testing.md
+  - title: "Task 4: Agentic Software Testing"
+    contentPath: 05-ai-agent.md
