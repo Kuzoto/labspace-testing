@@ -25,6 +25,12 @@ curl -fsSL https://claude.ai/install.sh | bash
 ```
 
 ```bash
+export ANTHROPIC_AUTH_TOKEN=ollama
+export ANTHROPIC_API_KEY=""
+export ANTHROPIC_BASE_URL=http://localhost:11434
+```
+
+```bash
 export PATH="$HOME/.local/bin:$PATH" >> ~/.bashrc && source ~/.bashrc
 ```
 
