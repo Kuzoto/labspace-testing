@@ -23,4 +23,5 @@ The application features a simple command-line interface that provides a straigh
 
 ### Acceptance Criteria
 
-* TODO: add acceptance criteria
+These are the acceptance criteria for proposed tests:
+Tests that functions produce expected output and behaviour, tests that errors are raised when expected, tests functions assign the correct values to variables, tests cover most or all lines, tests cover all branches.

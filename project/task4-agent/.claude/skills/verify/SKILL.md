@@ -63,7 +63,9 @@ pytest --cov -v
 ```
 
 **Pass criteria:**
-- TODO: Define specific pass criteria for test integrity (remove this item and list them here)
+- All tests pass. Zero failures and errors.
+- Code coverage is 100%. No uncovered lines.
+- Edge cases from acceptance criteria is covered
 <!-- For example:
 - All tests pass. Zero failures, zero errors.
 - Code coverage is 100%. No uncovered lines.
@@ -72,7 +74,10 @@ pytest --cov -v
 -->
 
 **If this gate fails:**
-- TODO: Define specific steps to fix test integrity issues (remove this item and list them here)
+- Identify uncovered lines or missing edge cases.
+- Write missing tests.
+- Fix any failing tests (fix the code, not the tests, unless the test is wrong).
+- Re-run until 100% pass and 100% coverage.
 <!-- For example:
 - Identify uncovered lines or missing edge cases.
 - Write the missing tests.
@@ -86,7 +91,10 @@ pytest --cov -v
 Review the implementation code for defensive programming:
 
 **Pass criteria:**
-- TODO: Define specific pass criteria for health check completeness (remove this item and list them here)
+- Error handling exists for every failure mode.
+- No silent failures (no bare `except:`, no swallowed exceptions)
+- Errors produce clear, actionable messages.
+- Graceful degradation for bad input (no crashes, no tracebacks to users).
 <!-- For example:
 - Error handling exists for every failure mode.
 - Errors produce clear, actionable messages.
@@ -95,7 +103,10 @@ Review the implementation code for defensive programming:
 -->
 
 **If this gate fails:**
-- TODO: Define specific steps to fix health check completeness issues (remove this item and list them here)
+- Add input validation, if or where missing.
+- Add error handling with descriptive messages.
+- Add tests for new error paths.
+- Re-run Gate 1 to confirm the tests still pass.
 <!-- For example:
 - Add input validation where missing.
 - Add error handling with descriptive messages.
@@ -113,7 +124,11 @@ python quiz.py
 ```
 
 **Pass criteria:**
-- TODO: Define specific pass criteria for deployment readiness (remove this item and list them here)
+- Command completes without errors.
+- No manual steps required between install and run.
+- Configuration is externalized (no hardcoded secrets, paths, or environment-specific values).
+- Walk through every acceptance criterion and requirement derived from the spec
+- README instructions are accurate and complete for setup and execution.
 <!-- For example:
 - Command completes without errors.
 - No manual steps required between install and run.
@@ -123,7 +138,11 @@ python quiz.py
 -->
 
 **If this gate fails:**
-- TODO: Define specific steps to fix deployment readiness issues (remove this item and list them here)
+- Externalize any hardcoded configuration.
+- Document any required environment variables in the memory bank.
+- Re-run the command.
+- If any criterion lacks a test, write one and re-run Gate 1.
+- Update README with accurate setup and execution instructions.
 <!-- For example:
 - Externalize any hardcoded configuration.
 - Document any required environment variables in the memory bank.
@@ -143,7 +162,11 @@ flake8
 ```
 
 **Pass criteria:**
-- TODO: Define specific pass criteria for maintainability (remove this item and list them here)
+- Ruff reports zero violations.
+- Code follows standard python style patterns.
+- Code is self-documenting — variable names, function names, and structure explain intent.
+- No unnecessary dependencies added.
+- Any new dependencies are justified in the feature spec or commit message.
 <!-- For example:
 - Ruff reports zero violations.
 - Code follows standard python style patterns.
@@ -153,7 +176,10 @@ flake8
 -->
 
 **If this gate fails:**
-- TODO: Define specific steps to fix maintainability issues (remove this item and list them here)
+- Fix all ruff violations.
+- Refactor code to match documented patterns.
+- Remove unjustified dependencies.
+- Re-run until clean.
 <!-- For example:
 - Fix all ruff violations.
 - Refactor code to match documented patterns.

@@ -75,7 +75,15 @@ Verify against specification, not just "something happened"
 CRITICAL: Write tests as executable documentation that tell the story of what your component does.
 
 NEVER write tests that:
-- TODO: List criteria that should be avoided in generated tests (remove this item and list them here)
+- Are irrelevant to the codebase
+- Use vague assertions
+- Lack descriptive names
+- Skip edge cases or error conditions
+- Use unrealistic test data
+- Are vague in what it is testing
+- Forget to test error paths
+- Write tests that depend on other tests
+- Skip critical logic (100% coverage is required)
 <!-- For example:
 - Test implementation details instead of behavior
 - Use vague assertions 
@@ -92,7 +100,12 @@ NEVER write tests that:
 -->
 
 ALWAYS:
-- TODO: List criteria that should be true for all generated tests (remove this item and list them here)
+- Aim for maximum line and branch coverage
+- Test behavior, not implementation
+- Use the Arrange, Act, Assert pattern
+- Achieve 100% branch and line coverage for critical logic
+- Make fast tests
+- Test all error conditions and recovery
 <!-- For example:>
 - Write descriptive test names that explain the scenario
 - Use AAA pattern (Arrange, Act, Assert)

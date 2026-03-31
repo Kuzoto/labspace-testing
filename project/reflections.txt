@@ -26,3 +26,33 @@ can help ensure you aren't missing import function results, such as returns, err
 ======
 Task 3
 ======
+Can you generate test cases for sample_app/quiz.py? Try to cover as many lines and branches as possible.
+Ensure you cover function returns, value assignments, and error raises. Use pytest to create the tests.
+I struggled in deciding what information to give the model because I wasn't sure what tools the model had
+access too.
+
+It couldn't view the actual code file, so it just created some generic tests. It did good at giving a
+comprehensive output, but it wasn't really on specific to my case. I wouldn't accept these tests as is
+because they aren't specific to my code.
+
+The tests it generated weren't applicable to the supplied quiz.py since it couldn't see the file. Thus, I
+was unable to run them.
+
+I have used claude code to generate test cases for research and projects in classes.
+
+======
+Task 4
+======
+The agent took to long to run so I couldn't run it
+
+The agentic approach is much easier than the approach in task 3. Since it has access to tools to view and edit
+your codebase it required minimal prompt engineering to get a good output. The skills also make it perform better
+giving it clear goals to aim for. Even, without those skills my experience working with coding agents is that it
+is quite easy to fix issues if you supply them with a little feedback and location for more info on what needs fixing.
+
+I told it to ensure it has 100% coverage, avoids vague assertions and names, and keeps tests fast. I find these to be
+the most crucial in making tests.
+
+I am not sure what to add since claude code is pretty capable already.
+
+I think a lot of maintanence will be performed by AI but still require human supervision.
