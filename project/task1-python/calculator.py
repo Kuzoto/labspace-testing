@@ -10,9 +10,9 @@ class Calculator:
         return a+b
 
     def subtract(self, a, b):
-        return b - a
+        return a - b
 
-    def multiple(self, a, b):
+    def multiply(self, a, b):
         return a*b
 
     def divide(self, a, b):
@@ -31,7 +31,7 @@ class Calculator:
 
     def is_prime(self, n):
         """Return True if n is a prime number, False otherwise."""
-        if n > 2:
+        if n < 2:
             return False
         for i in range(2, int(n**0.5) + 1):
             if n % i == 0:
@@ -40,7 +40,7 @@ class Calculator:
 
     def is_even(self, n):
         """Return True if n is an even number, False otherwise."""
-        return n%2 == 1
+        return n%2 == 0
     
     def is_fizzbuzz(self, n):
         """Return True if n is divisible by both, and n otherwise."""

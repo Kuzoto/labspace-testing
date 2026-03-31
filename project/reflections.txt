@@ -1,0 +1,28 @@
+======
+Task 1
+======
+The first error was because the multiply function didn't exist due to it being named multiple.
+The second error was because prime was returning false if n > 2 instead of if n < 2.
+The third error was because is even was returning true if the n%2 is 1.
+The fourth error was because subtraction was performing b - a instead of a - b.
+
+Most of these errors were quite easy to detect, the most difficult was probably the error in is_prime.
+The only improvement I can think of is to use an abs() in is_even to make the comparison more consistent.
+Most of my experience with testing is from java and provided tests in systems, but I do typically perform black box testing. Simply checking functionality and adding prints for debugging.
+
+======
+Task 2
+======
+I would say that knowing whats covered in the code, the most likely places to hide bugs are the return values that perform some calculations. 
+For example, the return of get_win_rate or apply_bonus could hide incorrect calculations. Yet, without being able to view what is covered with 
+error raises I would say recording a match between a non-existant player or adding a negative bonus.
+
+I covered all branched, so no modifications need to be made.
+
+The experience was quite similar except for this task, I wasn't looking at failing tests but missed coverage.
+Having coverage in task 1 wouldn't have pointed me to the buggy lines because they were covered. Test coverage 
+can help ensure you aren't missing import function results, such as returns, error checks, and value assignments.
+
+======
+Task 3
+======
